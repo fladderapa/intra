@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script  src="/bower_components/jquery/dist/jquery.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/style.css">
+     <link rel="stylesheet" type="text/css" href="bower_components/clockpicker/dist/bootstrap-clockpicker.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script type="text/javascript" src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="bower_components/clockpicker/dist/bootstrap-clockpicker.min.js"></script>
+    <script type="text/javascript" src="/dist/js/main.min.js"></script>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<div class="section section-header"></div>
+<span class="logo-container"> <img class="logo" src="public/img/w&s-logo.png"> </img> </span>
+<div class="section section-maintron">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="toggle-addSession" class="mat-example big text-center">
+                Lägg till ny rapport
+            </div>
+            <div class="add-session" id="add-session-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-lg-3"><span>Projekt</span></div>
+                        <div class="col-lg-9">
+                            <select class="selectpicker">
+                                <option>Mustard</option>
+                                 <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-xs-12">
+                        <div class="col-lg-3"><span>Påbörjad arbetstid</span></div>
+                        <div class="col-lg-2">
+                            <span class="time">09:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">10:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">11:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="input-group clockpicker">
+                                <input type="text" class="form-control" value="09:00">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-lg-3"><span>Avslutad arbetstid</span></div>
+                        <div class="col-lg-2">
+                            <span class="time">16:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">17:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">18:00</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="input-group clockpicker">
+                                <input type="text" class="form-control" value="17:00">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-lg-3"><span>Rast</span></div>
+                        <div class="col-lg-2">
+                            <span class="time">30min</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">45min</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="time">60min</span></br>
+                            <input class="checkbox "type="checkbox" aria-label="...">
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="input-group clockpicker">
+                                <input type="text" class="form-control" value="17:00">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>
+                            <div class="input-group clockpicker">
+                                <input type="text" class="form-control" value="17:00">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mat-example big text-center">
+                Översikt
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-filter">
+    <div class="row">
+        <div class="col-md-6">
+            <div id ="toggle-filter" class="mat-example small text-center">
+                    Filter
+            </div>
+            <div class="row" id="filter-content">
+                <div class="col-xs-6">
+                    <div class="wrapper">
+                        <div class="item">
+                            Den här veckan
+                            <div class="close"></div>
+                        </div>
+                        <div class="item">
+                            Den här månaden
+                            <div class="close"></div>
+                        </div>
+                        <div class="item">
+                            Alla
+                            <div class="close"></div>
+                        </div>
+                        <div class="item">
+                            Välj tidsperiod
+                            <div class="close"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="content">
+                        <div id="admin" ><div id="admin_text" >Projekt </div></div>
+                        <div id="settings" class="fa fa-cog"></div>
+                        <div id="menu">
+                            <div id="arrow"></div>
+                            <a href="#">Siba <i id="firstIcon" class="fa fa-user"></i></a>
+                            <a href="#">Shareville <i id="secondIcon" class="fa fa-bar-chart-o"></i></a>
+                            <a href="#">Nordnet <i id="thirdIcon" class="fa fa-cloud-upload"></i></a>
+                            <a href="#">Avanza <i id="fourthIcon" class="fa fa-pencil"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
+
+
+<div class="section section-table">
+<div class="table-responsive-vertical shadow-z-1">
+  <table id="table" class="table table-hover table-mc-light-blue">
+      <thead>
+        <tr>
+          <th>Projekt</th>
+          <th>Datum</th>
+          <th>Start</th>
+          <th>Slut</th>
+            <th>Rast</th>
+            <th>Arbetate timmar</th>
+            <th>Uppgift</th>
+            <th>Ändra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-title="Projekt">Siba</td>
+          <td data-title="Datum">26-01-2014</td>
+          <td data-title="Start">09:00</td>
+            <td data-title="Slut">17:00</td>
+          <td data-title="Rast">01:00</td>
+            <td data-title="Arbetade timmar">07:00</td>
+            <td data-title="Uppgift">Responsivitet</td>
+            <td data-title="Ändra">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-warning">Editera</button>
+                    <button type="button" class="btn btn-danger">Ta bort</button>
+                </div>
+            </td>
+        </tr>
+              <tr>
+          <td data-title="Projekt">Siba</td>
+          <td data-title="Datum">26-01-2014</td>
+          <td data-title="Start">09:00</td>
+            <td data-title="Slut">17:00</td>
+          <td data-title="Rast">01:00</td>
+            <td data-title="Arbetade timmar">07:00</td>
+            <td data-title="Uppgift">Responsivitet</td>
+            <td data-title="Ändra">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-warning">Editera</button>
+                    <button type="button" class="btn btn-danger">Ta bort</button>
+                </div>
+            </td>
+        </tr>
+              <tr>
+          <td data-title="Projekt">Siba</td>
+          <td data-title="Datum">26-01-2014</td>
+          <td data-title="Start">09:00</td>
+            <td data-title="Slut">17:00</td>
+          <td data-title="Rast">01:00</td>
+            <td data-title="Arbetade timmar">07:00</td>
+            <td data-title="Uppgift">Responsivitet</td>
+            <td data-title="Ändra">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-warning">Editera</button>
+                    <button type="button" class="btn btn-danger">Ta bort</button>
+                </div>
+            </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+    </div>
+
+
+
+</body>
+</html>
