@@ -15,7 +15,7 @@ $(document).ready( function (){
     });
     $('.selectpicker').selectpicker({
         style: 'btn-default',
-        size: 4
+        size: 8
     });
 
     $('.clockpicker').clockpicker();
