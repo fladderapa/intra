@@ -1,11 +1,11 @@
 $(document).ready( function (){
   //appends the overlay to each button
-    $(".mat-example").each( function(){
+    $(".material-btn").each( function(){
     $(this).append("<div class='ripple'></div>");
     });
   
   
-    $(".mat-example").click(function(e){
+    $(".material-btn").click(function(e){
       var $clicked = $(this);
       
       //gets the clicked coordinates

@@ -13,10 +13,13 @@ $(document).ready( function (){
     // Animation complete.
         });
     });
-    $('.selectpicker').selectpicker({
-        style: 'btn-default',
-        size: 8
+
+    $( "#toggle-chart" ).click(function() {
+        $( ".chart" ).toggle( "slow", function() {
+    // Animation complete.
+        });
     });
+    $('.selectpicker').selectpicker();
 
     $('.clockpicker').clockpicker();
 
