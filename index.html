@@ -7,288 +7,208 @@
     <link rel="stylesheet" type="text/css" href="/dist/css/style.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href='bower_components/clockpicker/dist/bootstrap-clockpicker.css'>
-
     <script type="text/javascript" src='/bower_components/jquery/dist/jquery.min.js'></script>
     <script type="text/javascript" src="/dist/js/main.min.js"></script>
+
     <title>Intra</title>
 </head>
 <body>
-<div class="section section-header"></div>
-<span class="logo-container"> <img class="logo" src="public/img/w&s-logo.png"> </img> </span>
-<div class="section section-maintron">
-    <div class="row">
-        <div class="col-md-6">
-            <div id="toggle-addSession" class="material-btn big text-center">
-                Lägg till ny rapport
-            </div>
-            <form role="form">
-                <div class="add-session" id="add-session-content">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="col-lg-9"><span>Projekt</span></div>
-                            <div class="col-lg-3">
-                                <select class="selectpicker"  data-live-search="true">
-                                    <option>Siba</option>
-                                     <option>Nordnet</option>
-                                    <option>Shareville</option>
-                                    <option>Red Eye</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="col-lg-9"><span>Uppgift</span></div>
-                            <div class="col-lg-3">
-                                <select class="selectpicker"  data-live-search="true">
-                                    <option>Mustard</option>
-                                     <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-group btn-group-radio">
-                        <div class="row">
-                           <div class="col-xs-12">
-                                <div class="col-lg-3"><span>Påbörjad arbetstid</span></div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="startTime" id="optionsRadios1" value="09:00">
-                                    <label class="btn" for="optionsRadios1">
-                                        09:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                              <input type="radio" name="startTime" id="optionsRadios2" value="10:00">
-                                    <label class="btn" for="optionsRadios2">
-                                        10:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                              <input type="radio" name="startTime" id="optionsRadios3" value="11:00">
-                                    <label class="btn" for="optionsRadios3">
-                                        11:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="input-group clockpicker">
-                                        <input type="text" class="form-control" value="09:00">
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-time"></span>
-                                            </span>
-                                    </div>
-                                </div>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="btn-group btn-group-radio">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-lg-3"><span>Avslutad arbetstid</span></div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="endTime" id="optionsRadios4" value="16:00">
-                                    <label class="btn" for="optionsRadios4">
-                                        16:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="endTime" id="optionsRadios5" value="17:00">
-                                    <label class="btn" for="optionsRadios5">
-                                        17:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="endTime" id="optionsRadios6" value="18:00">
-                                    <label class="btn" for="optionsRadios6">
-                                        18:00
-                                    </label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="input-group clockpicker">
-                                        <input type="text" class="form-control" value="17:00">
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-time"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-group btn-group-radio">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-lg-3"><span>Rast</span></div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="break" id="optionsRadios7" value="30min">
-                                    <label class="btn" for="optionsRadios7">
-                                        30min
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="break" id="optionsRadios8" value="45min">
-                                    <label class="btn" for="optionsRadios8">
-                                        45min
-                                    </label>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="radio" name="break" id="optionsRadios9" value="60min">
-                                    <label class="btn" for="optionsRadios9">
-                                        60min
-                                    </label>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="input-group clockpicker">
-                                        <input type="text" class="form-control" value="17:00">
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-time"></span>
-                                        </span>
-                                    </div>
-                                    <div class="input-group clockpicker">
-                                        <input type="text" class="form-control" value="17:00">
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-time"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <div id="toggle-chart" class="material-btn big text-center">
-                Översikt
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="chart">
-                        <img src="public/img/chart-example.jpg" class="img-responsive" style="width: 100%;">
-                    </div>
-                <div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="section section-filter">
-    <div class="row">
-        <div class="col-md-6">
-            <div id ="toggle-filter" class="material-btn small text-center">
-                    Filter
-            </div>
-            <div class="row" id="filter-content">
-                <div class="col-xs-6">
-                    <div class="wrapper">
-                        <div class="item">
-                            Alla
+    <div id="st-container" class="st-container">
+        <nav class="st-menu st-effect-2" id="menu-2">
+			<h1 class="text-center">Will & Skill</h1>
+			<ul>
+				<li ><a href="#">Profil</a></li>
+			</ul>
+        </nav>
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <div class="main clearfix">
+                        <div id="st-trigger-effects" class="column">
+                            <button data-effect="st-effect-2"> Meny</button>
                         </div>
-                        <div class="item">
-                            Det här kvartalet
-                        </div>
-                        <div class="item">
-                            Den här månaden
-                        </div>
-                        <div class="item">
-                            Den här veckan
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                   <div class="wrapper2">
-                        <div class="item2">
-                            Shareville
-                            <div class="close2"></div>
-                        </div>
-
-                        <div class="item2">
-                            Redeye
-                             <div class="close2"></div>
-                        </div>
-                        <div class="item2">
-                            Intra
-                             <div class="close2"></div>
-                        </div>
-                        <div class="item2">
-                            Dashing
-                             <div class="close2"></div>
+                        <span class="logo-container"> <img class="logo" src="public/img/w&s-logo.png"> </img> </span>
+                        <h2 class="text-center">Skapa rapport</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <div class="clock">
+                                            <span class="hours"></span>
+                                            <span class="minutes"></span>
+                                        </div>
+                                        <div class="date">
+                                            <div id="daymonth"></div>
+                                            <div id="year"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="create-container text-center">
+                                        <form class="form">
+                                            <div class="row">
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <select class="selectpicker" data-width="100%"  data-live-search="true">
+                                                        <option data-hidden="true">Projekt</option>
+                                                        <option>Siba</option>
+                                                        <option>Nordnet</option>
+                                                        <option>Shareville</option>
+                                                        <option>Red Eye</option>
+                                                        <option>Touchbase</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-5 ">
+                                                    <select class="selectpicker"  data-width="100%" data-live-search="true">
+                                                        <option data-hidden="true">Uppgift</option>
+                                                        <option>Touchbase login</option>
+                                                        <option>Touchbase image upload</option>
+                                                        <option>Shareville - header</option>
+                                                        <option>Red Eye - databas</option>
+                                                        <option>Siba logga</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="input-group clockpicker">
+                                                        <input type="text" class="form-control" value="09:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 ">
+                                                    <div class="input-group clockpicker">
+                                                        <input type="text" class="form-control" value="17:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="input-group clockpicker">
+                                                        <input type="text" class="form-control" value="12:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 ">
+                                                    <div class="input-group clockpicker">
+                                                        <input type="text" class="form-control" value="13:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-10 col-sm-offset-1">
+                                                    <textarea class="form-control" rows="3" placeholder="Kommentar.."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-10 col-sm-offset-1">
+                                                   <button type="button" class="btn form-control btn-default">Skapa</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="section section-table">
+            <div class="table-responsive-vertical ">
+                <table id="table" class="table">
+                    <thead>
+                    <tr>
+                        <th>Projekt</th>
+                        <th>Datum</th>
+                        <th>Start</th>
+                        <th>Slut</th>
+                        <th>Rast</th>
+                        <th>Arbetate timmar</th>
+                        <th>Uppgift</th>
+                        <th>Ändra</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td data-title="Projekt">Siba</td>
+                        <td data-title="Datum">26-01-2014</td>
+                        <td data-title="Start">09:00</td>
+                        <td data-title="Slut">17:00</td>
+                        <td data-title="Rast">01:00</td>
+                        <td data-title="Arbetade timmar">07:00</td>
+                        <td data-title="Uppgift">Responsivitet</td>
+                        <td data-title="Ändra">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-warning">Editera</button>
+                                <button type="button" class="btn btn-danger">Ta bort</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Projekt">Siba</td>
+                        <td data-title="Datum">26-01-2014</td>
+                        <td data-title="Start">09:00</td>
+                        <td data-title="Slut">17:00</td>
+                        <td data-title="Rast">01:00</td>
+                        <td data-title="Arbetade timmar">07:00</td>
+                        <td data-title="Uppgift">Responsivitet</td>
+                        <td data-title="Ändra">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-warning">Editera</button>
+                                <button type="button" class="btn btn-danger">Ta bort</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Projekt">Siba</td>
+                        <td data-title="Datum">26-01-2014</td>
+                        <td data-title="Start">09:00</td>
+                        <td data-title="Slut">17:00</td>
+                        <td data-title="Rast">01:00</td>
+                        <td data-title="Arbetade timmar">07:00</td>
+                        <td data-title="Uppgift">Responsivitet</td>
+                        <td data-title="Ändra">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-warning">Editera</button>
+                                <button type="button" class="btn btn-danger">Ta bort</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Projekt">Siba</td>
+                        <td data-title="Datum">26-01-2014</td>
+                        <td data-title="Start">09:00</td>
+                        <td data-title="Slut">17:00</td>
+                        <td data-title="Rast">01:00</td>
+                        <td data-title="Arbetade timmar">07:00</td>
+                        <td data-title="Uppgift">Responsivitet</td>
+                        <td data-title="Ändra">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-warning">Editera</button>
+                                <button type="button" class="btn btn-danger">Ta bort</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6"></div>
-    </div>
-</div>
-
-
-<div class="section section-table">
-<div class="table-responsive-vertical shadow-z-1">
-  <table id="table" class="table table-hover table-mc-light-blue">
-      <thead>
-        <tr>
-          <th>Projekt</th>
-          <th>Datum</th>
-          <th>Start</th>
-          <th>Slut</th>
-            <th>Rast</th>
-            <th>Arbetate timmar</th>
-            <th>Uppgift</th>
-            <th>Ändra</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-title="Projekt">Siba</td>
-          <td data-title="Datum">26-01-2014</td>
-          <td data-title="Start">09:00</td>
-            <td data-title="Slut">17:00</td>
-          <td data-title="Rast">01:00</td>
-            <td data-title="Arbetade timmar">07:00</td>
-            <td data-title="Uppgift">Responsivitet</td>
-            <td data-title="Ändra">
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-warning">Editera</button>
-                    <button type="button" class="btn btn-danger">Ta bort</button>
-                </div>
-            </td>
-        </tr>
-              <tr>
-          <td data-title="Projekt">Siba</td>
-          <td data-title="Datum">26-01-2014</td>
-          <td data-title="Start">09:00</td>
-            <td data-title="Slut">17:00</td>
-          <td data-title="Rast">01:00</td>
-            <td data-title="Arbetade timmar">07:00</td>
-            <td data-title="Uppgift">Responsivitet</td>
-            <td data-title="Ändra">
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-warning">Editera</button>
-                    <button type="button" class="btn btn-danger">Ta bort</button>
-                </div>
-            </td>
-        </tr>
-              <tr>
-          <td data-title="Projekt">Siba</td>
-          <td data-title="Datum">26-01-2014</td>
-          <td data-title="Start">09:00</td>
-            <td data-title="Slut">17:00</td>
-          <td data-title="Rast">01:00</td>
-            <td data-title="Arbetade timmar">07:00</td>
-            <td data-title="Uppgift">Responsivitet</td>
-            <td data-title="Ändra">
-                <div class="btn-group" role="group" aria-label="...">
-                    <button type="button" class="btn btn-warning">Editera</button>
-                    <button type="button" class="btn btn-danger">Ta bort</button>
-                </div>
-            </td>
-        </tr>
-      </tbody>
-  </table>
-</div>
     </div>
 
-
-
+    <script type="text/javascript" src="/public/javascript/classie.js"></script>
+    <script type="text/javascript" src="/public/javascript/sidebarEffects.js"></script
 </body>
 </html>

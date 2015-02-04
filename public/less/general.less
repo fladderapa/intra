@@ -1,34 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
+
 body {
 
+  color: #6b6666;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
 
-  font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.8rem;
-  line-height: 2rem;
-  letter-spacing: 0.01rem;
-  color: #f86b4f;
-  background-color: #f5f5f5;
-
-
-  // Font Rendering
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
-#filter-content{
-  display: none;
-}
-.table{
-  font-weight: normal;
+h1 {
+font-size: 44px;
+font-weight: 500;
+line-height: 1.1;
 }
 
-.section-header{
-  height: 100px;
-  background-color: #f86b4f;
-  top: 0;
+h2{
+  font-size: 56px;
+  color: #555;
+  font-weight: 500;
+line-height: 1.1;
+  margin-bottom: 75px;
 }
 
 .logo-container{
@@ -39,7 +29,7 @@ body {
 
 }
 .logo {
-margin-top: -60px;
+margin-top: -128px;
 margin-bottom: 20px;
 display: inline-block;
 width: 100px;
@@ -54,87 +44,41 @@ border-radius: 100%;
 box-shadow: 0 1px 1px rgba(0,0,0,0.3);
 
 }
-
-.add-session{
-  font-family: "Roboto";
-  color: #1a2732;
-  font-weight: 400;
-  background: white;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.15);
-  text-shadow: none;
-  position: relative;
-  margin-top: 25px;
- width: 100%;
- font-size: 18px;
-  padding: 25px 25px 50px 25px;
-display: none;
-}
-.add-session label{
-  color: #f86b4f;
+.form-control, .selectpicker{
+  background-color: #f9f9f9 !important;
   font-size: 16px;
+  color: #6b6666;
+}
+.create-container{
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 5px;
 }
 
-.selectpicker{
-  width: 130px !important;
-
-}
-.add-session .col-lg-2{
-  margin-top: -5px;
+.create-container .col-sm-5, .col-sm-10{
+  padding: 5px;
 }
 
 
-.add-session .row {
-  margin-top: 50px;
+.btn-create-rapport-container p {
+  font-size: 70px;
 }
 
-.time{
-  color: #f86b4f;
+
+.glyphicon, .caret {
+  color: #37C3DD;
 }
 
-.chart{
-  padding: 25px 0 50px 0;
-  display:none;
-
-}
-
-.checkbox{
-  margin-left: 18px !important;
-}
-.section-maintron{
-  margin-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.section-filter{
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.section-table{
-  margin-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.full-width{
-  width: 100% !important;
-}
-
-.table thead {
-  color: #1a2732 !important;
+.btn-default:hover{
+   color: #37C3DD;
 }
 
 
 
-//MEDIA QUERIES
 
-@media only screen and (max-width : 1200px) {
-  .add-session .col-lg-2{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  }
-}
+
+
+
 
 

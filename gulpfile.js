@@ -11,13 +11,11 @@ var paths = {
 };
 
 
-
 gulp.task('build-less', function(){
     return gulp.src(['public/less/style.less'])
         .pipe(less())
         .pipe(gulp.dest('dist/css'))
 });
-
 
 
 
@@ -30,10 +28,6 @@ gulp.task('build-js', function(){
        .pipe(uglify())
        .pipe(gulp.dest('dist/js'))
 });
-
-
-
-
 
 
 
