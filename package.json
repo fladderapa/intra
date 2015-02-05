@@ -9,7 +9,14 @@
   "author": "alex",
   "license": "ISC",
   "devDependencies": {
+    "chalk": "^0.5.1",
+    "dateformat": "^1.0.11",
     "gulp": "^3.8.10",
-    "gulp-less": "^2.0.1"
+    "gulp-concat": "^2.4.3",
+    "gulp-less": "^2.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "replace-ext": "0.0.1",
+    "vinyl": "^0.4.6"
   }
 }
