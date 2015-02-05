@@ -21,6 +21,7 @@ gulp.task('build-less', function(){
 
 gulp.task('build-js', function(){
    return gulp.src(["public/javascript/*.js",
+       "bootstrap.min.js",
        'bower_components/bootstrap/dist/js/bootstrap.min.js',
        'bower_components/clockpicker/dist/bootstrap-clockpicker.min.js',
        'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js'])

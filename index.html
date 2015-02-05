@@ -13,192 +13,207 @@
     <title>Intra</title>
 </head>
 <body>
+<div id="wrapper">
 
-    <div id="st-container" class="st-container">
-        <nav class="st-menu st-effect-2" id="menu-2">
-			<h1 class="text-center">Will & Skill</h1>
-			<ul>
-				<li ><a href="#">Profil</a></li>
-			</ul>
-        </nav>
-        <div class="st-pusher">
-            <div class="st-content">
-                <div class="st-content-inner">
-                    <div class="main clearfix">
-                        <div id="st-trigger-effects" class="column">
-                            <button data-effect="st-effect-2"> Meny</button>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Will&Skill
+                </a>
+            </li>
+            <li>
+                <a href="#">Profil</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div class="maintron">
+
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="logo-container"> <img class="logo" src="public/img/w&s-logo.png"> </img> </span>
+                    <h2 class="text-center">Skapa rapport</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="box">
+                                    <div class="clock">
+                                        <span class="hours"></span>
+                                        <span class="minutes"></span>
+                                    </div>
+                                    <div class="date">
+                                        <div id="daymonth"></div>
+                                        <div id="year"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="create-container text-center">
+                                    <form class="form">
+                                        <div class="row">
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                                <select class="selectpicker" data-width="100%" data-live-search="true">
+                                                    <option data-hidden="true">Projekt</option>
+                                                    <option>Siba</option>
+                                                    <option>Nordnet</option>
+                                                    <option>Shareville</option>
+                                                    <option>Red Eye</option>
+                                                    <option>Touchbase</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-5 ">
+                                                <select class="selectpicker" data-width="100%" data-live-search="true">
+                                                    <option data-hidden="true">Uppgift</option>
+                                                    <option>Touchbase login</option>
+                                                    <option>Touchbase image upload</option>
+                                                    <option>Shareville - header</option>
+                                                    <option>Red Eye - databas</option>
+                                                    <option>Siba logga</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                                <div class="input-group clockpicker">
+                                                    <input type="text" class="form-control" value="09:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5 ">
+                                                <div class="input-group clockpicker">
+                                                    <input type="text" class="form-control" value="17:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-5 col-sm-offset-1">
+                                                <div class="input-group clockpicker">
+                                                    <input type="text" class="form-control" value="12:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5 ">
+                                                <div class="input-group clockpicker">
+                                                    <input type="text" class="form-control" value="13:00">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <textarea class="form-control" rows="3"
+                                                          placeholder="Kommentar.."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <button type="button" class="btn form-control btn-default">Skapa
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <span class="logo-container"> <img class="logo" src="public/img/w&s-logo.png"> </img> </span>
-                        <h2 class="text-center">Skapa rapport</h2>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <div class="clock">
-                                            <span class="hours"></span>
-                                            <span class="minutes"></span>
-                                        </div>
-                                        <div class="date">
-                                            <div id="daymonth"></div>
-                                            <div id="year"></div>
-                                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="section section-table">
+                                    <div class="table-responsive-vertical ">
+                                        <table id="table" class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>Projekt</th>
+                                                <th>Datum</th>
+                                                <th>Start</th>
+                                                <th>Slut</th>
+                                                <th>Rast</th>
+                                                <th>Arbetate timmar</th>
+                                                <th>Uppgift</th>
+                                                <th>Ändra</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td data-title="Projekt">Siba</td>
+                                                <td data-title="Datum">26-01-2014</td>
+                                                <td data-title="Start">09:00</td>
+                                                <td data-title="Slut">17:00</td>
+                                                <td data-title="Rast">01:00</td>
+                                                <td data-title="Arbetade timmar">07:00</td>
+                                                <td data-title="Uppgift">Responsivitet</td>
+                                                <td data-title="Ändra">
+                                                    <div class="btn-group" role="group" aria-label="...">
+                                                        <button type="button" class="btn btn-warning">Editera</button>
+                                                        <button type="button" class="btn btn-danger">Ta bort</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Projekt">Siba</td>
+                                                <td data-title="Datum">26-01-2014</td>
+                                                <td data-title="Start">09:00</td>
+                                                <td data-title="Slut">17:00</td>
+                                                <td data-title="Rast">01:00</td>
+                                                <td data-title="Arbetade timmar">07:00</td>
+                                                <td data-title="Uppgift">Responsivitet</td>
+                                                <td data-title="Ändra">
+                                                    <div class="btn-group" role="group" aria-label="...">
+                                                        <button type="button" class="btn btn-warning">Editera</button>
+                                                        <button type="button" class="btn btn-danger">Ta bort</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Projekt">Siba</td>
+                                                <td data-title="Datum">26-01-2014</td>
+                                                <td data-title="Start">09:00</td>
+                                                <td data-title="Slut">17:00</td>
+                                                <td data-title="Rast">01:00</td>
+                                                <td data-title="Arbetade timmar">07:00</td>
+                                                <td data-title="Uppgift">Responsivitet</td>
+                                                <td data-title="Ändra">
+                                                    <div class="btn-group" role="group" aria-label="...">
+                                                        <button type="button" class="btn btn-warning">Editera</button>
+                                                        <button type="button" class="btn btn-danger">Ta bort</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Projekt">Siba</td>
+                                                <td data-title="Datum">26-01-2014</td>
+                                                <td data-title="Start">09:00</td>
+                                                <td data-title="Slut">17:00</td>
+                                                <td data-title="Rast">01:00</td>
+                                                <td data-title="Arbetade timmar">07:00</td>
+                                                <td data-title="Uppgift">Responsivitet</td>
+                                                <td data-title="Ändra">
+                                                    <div class="btn-group" role="group" aria-label="...">
+                                                        <button type="button" class="btn btn-warning">Editera</button>
+                                                        <button type="button" class="btn btn-danger">Ta bort</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="create-container text-center">
-                                        <form class="form">
-                                            <div class="row">
-                                                <div class="col-sm-5 col-sm-offset-1">
-                                                    <select class="selectpicker" data-width="100%"  data-live-search="true">
-                                                        <option data-hidden="true">Projekt</option>
-                                                        <option>Siba</option>
-                                                        <option>Nordnet</option>
-                                                        <option>Shareville</option>
-                                                        <option>Red Eye</option>
-                                                        <option>Touchbase</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-5 ">
-                                                    <select class="selectpicker"  data-width="100%" data-live-search="true">
-                                                        <option data-hidden="true">Uppgift</option>
-                                                        <option>Touchbase login</option>
-                                                        <option>Touchbase image upload</option>
-                                                        <option>Shareville - header</option>
-                                                        <option>Red Eye - databas</option>
-                                                        <option>Siba logga</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-5 col-sm-offset-1">
-                                                    <div class="input-group clockpicker">
-                                                        <input type="text" class="form-control" value="09:00">
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-time"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-5 ">
-                                                    <div class="input-group clockpicker">
-                                                        <input type="text" class="form-control" value="17:00">
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-time"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-5 col-sm-offset-1">
-                                                    <div class="input-group clockpicker">
-                                                        <input type="text" class="form-control" value="12:00">
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-time"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-5 ">
-                                                    <div class="input-group clockpicker">
-                                                        <input type="text" class="form-control" value="13:00">
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-time"></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-10 col-sm-offset-1">
-                                                    <textarea class="form-control" rows="3" placeholder="Kommentar.."></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-10 col-sm-offset-1">
-                                                   <button type="button" class="btn form-control btn-default">Skapa</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="section section-table">
-            <div class="table-responsive-vertical ">
-                <table id="table" class="table">
-                    <thead>
-                    <tr>
-                        <th>Projekt</th>
-                        <th>Datum</th>
-                        <th>Start</th>
-                        <th>Slut</th>
-                        <th>Rast</th>
-                        <th>Arbetate timmar</th>
-                        <th>Uppgift</th>
-                        <th>Ändra</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td data-title="Projekt">Siba</td>
-                        <td data-title="Datum">26-01-2014</td>
-                        <td data-title="Start">09:00</td>
-                        <td data-title="Slut">17:00</td>
-                        <td data-title="Rast">01:00</td>
-                        <td data-title="Arbetade timmar">07:00</td>
-                        <td data-title="Uppgift">Responsivitet</td>
-                        <td data-title="Ändra">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-warning">Editera</button>
-                                <button type="button" class="btn btn-danger">Ta bort</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-title="Projekt">Siba</td>
-                        <td data-title="Datum">26-01-2014</td>
-                        <td data-title="Start">09:00</td>
-                        <td data-title="Slut">17:00</td>
-                        <td data-title="Rast">01:00</td>
-                        <td data-title="Arbetade timmar">07:00</td>
-                        <td data-title="Uppgift">Responsivitet</td>
-                        <td data-title="Ändra">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-warning">Editera</button>
-                                <button type="button" class="btn btn-danger">Ta bort</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-title="Projekt">Siba</td>
-                        <td data-title="Datum">26-01-2014</td>
-                        <td data-title="Start">09:00</td>
-                        <td data-title="Slut">17:00</td>
-                        <td data-title="Rast">01:00</td>
-                        <td data-title="Arbetade timmar">07:00</td>
-                        <td data-title="Uppgift">Responsivitet</td>
-                        <td data-title="Ändra">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-warning">Editera</button>
-                                <button type="button" class="btn btn-danger">Ta bort</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-title="Projekt">Siba</td>
-                        <td data-title="Datum">26-01-2014</td>
-                        <td data-title="Start">09:00</td>
-                        <td data-title="Slut">17:00</td>
-                        <td data-title="Rast">01:00</td>
-                        <td data-title="Arbetade timmar">07:00</td>
-                        <td data-title="Uppgift">Responsivitet</td>
-                        <td data-title="Ändra">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-warning">Editera</button>
-                                <button type="button" class="btn btn-danger">Ta bort</button>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
                                 </div>
                             </div>
                         </div>
@@ -207,8 +222,10 @@
             </div>
         </div>
     </div>
+</div>
+<!-- /#page-content-wrapper -->
 
-    <script type="text/javascript" src="/public/javascript/classie.js"></script>
-    <script type="text/javascript" src="/public/javascript/sidebarEffects.js"></script
+<script type="text/javascript" src="/public/javascript/classie.js"></script>
+<script type="text/javascript" src="/public/javascript/sidebarEffects.js"></script
 </body>
 </html>
